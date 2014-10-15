@@ -1,0 +1,7 @@
+markdown: redcarpet
+baseurl: /portfolio
+exclude: ['README.md','LICENSE']
+timezone: America/Sao_Paulo
+sass:
+    sass_dir: _sass
+    style: :compressed
