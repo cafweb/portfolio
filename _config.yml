@@ -1,7 +1,9 @@
 markdown: redcarpet
 baseurl: /portfolio
-exclude: ['README.md','LICENSE']
+exclude: ['README.md','LICENSE','Gemfile','Gemfile.lock']
 timezone: America/Sao_Paulo
 sass:
     sass_dir: _sass
     style: :compressed
+
+repository: https://github.com/cafweb/portfolio
