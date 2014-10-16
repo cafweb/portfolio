@@ -2,10 +2,7 @@ markdown: redcarpet
 baseurl:
 exclude: ['README.md','LICENSE','Gemfile','Gemfile.lock']
 timezone: America/Sao_Paulo
-#sass:
-#    sass_dir: _sass
-#    style: :compressed
 
-
+google_analytics_id: UA-55810419-1
 
 repository: https://github.com/cafweb/portfolio
