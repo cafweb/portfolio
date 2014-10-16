@@ -1,5 +1,5 @@
 markdown: redcarpet
-baseurl: /portfolio
+baseurl:
 exclude: ['README.md','LICENSE','Gemfile','Gemfile.lock']
 timezone: America/Sao_Paulo
 sass:
