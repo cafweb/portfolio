@@ -12,7 +12,7 @@ $cinzaClaro : #EBEEED;
    ========================================================================== */
 html,body{
   height: 100%;
-  }
+}
 
 p{
   font-family: 'Open Sans', sans-serif;
@@ -276,6 +276,61 @@ section {
         -o-transform: translateX(-100%);
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
+      }
+    }
+  }
+}
+
+.breadcrumb{
+  background: none;
+  margin-top: 20px
+}
+
+#resumo{
+  h2{
+    border-bottom: 1px $azulClaro solid;
+    position: relative;
+    padding-bottom: 5px;
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      bottom: -1px;
+      background: $azulEscuro;
+    }
+  }
+  li {
+    div{
+      border-left: 2px solid $azulEscuro;
+      padding-left: 20px;
+      small{
+        &.pull-right{
+          color: $azulEscuro;
+        }
+      }
+
+    }
+  }
+
+}
+
+footer{
+  &.rodape{
+    .container{
+      border-top: 1px solid $azulClaro;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .logo{
+      a{
+        color: #333;
+        opacity: 0.5;
+        &:hover,&:focus{
+          opacity: 0.8;
+          text-decoration: none;
+        }
       }
     }
   }

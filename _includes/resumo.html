@@ -1,0 +1,43 @@
+
+<section id="resumo">
+
+    <div class="row">
+
+        <div class="col-xs-8">
+            <h2>Empregos</h2>
+
+            <ul class="list-unstyled">
+                {% for xp in site.categories.experiencia %}
+                <li>
+                    <div>
+                        <h3>{{xp.title}} <small class="pull-right">{{xp.duracao}}</small><br><small>{{xp.cargo}}</small></h3>
+
+                        {{xp.content}}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <a href="#">Faça o download do meu curriculo em PDF</a>
+
+                    </div>
+        <div class="col-xs-4">
+            <h2>Habilidades</h2>
+            <dl class="dl-horizontal">
+                {% for skill in site.categories.habilidades %}
+                <dt>{{skill.title}}</dt>
+                <dd>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="{{skill.skill}}" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.skill}}%;">
+                            <span class="sr-only">{{skill.skill}}% Completos</span>
+                        </div>
+                    </div>
+
+                </dd>
+                {% endfor %}
+            </dl>
+
+        </div>
+    </div>
+
+</section>

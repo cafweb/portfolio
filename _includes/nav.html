@@ -21,6 +21,11 @@
                     Sobre
                     </a>
                 </li>
+                <li {% if page.url contains 'resumo'  %}class = "active" {% endif %}>
+                    <a href="{{site.baseurl}}/resumo.html">
+                        Resumo
+                    </a>
+                </li>
                 <li {% if page.url contains 'trabalhos'  %}class = "active" {% endif %}>
                     <a href="{{site.baseurl}}/#trabalhos">
                         Trabalhos
