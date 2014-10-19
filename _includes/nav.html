@@ -7,13 +7,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{site.baseurl}}"><span class="icon-logo"></span></a>
+            <a class="navbar-brand" href="{{site.baseurl}}"><span class="icon-logo_GEO"></span></a>
         </div>
-        <div class="collapse navbar-collapse {% if include.tipo == 'index' %}navbar-right{% endif %}">
+        <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li {% if page.url == '/index.html' %}class = "active" {% endif %}>
                     <a href="{{site.baseurl}}/">
-                    Perfil
+                    Home
                     </a>
                 </li>
                 <li>
@@ -21,7 +21,7 @@
                     Sobre
                     </a>
                 </li>
-                <li {% if page.url == '/trabalhos/index.html' %}class = "active" {% endif %}>
+                <li {% if page.url contains 'trabalhos'  %}class = "active" {% endif %}>
                     <a href="{{site.baseurl}}/#trabalhos">
                         Trabalhos
                     </a>

@@ -10,7 +10,7 @@
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
     <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -26,11 +26,11 @@
 
 
 
-        {% include nav.html tipo="index" %}
+    {% include nav.html tipo="index home" %}
 
-    <main>
-        {{content}}
-    </main>
+
+    {{content}}
+
 
     <footer>
         {% include rodape.html %}
