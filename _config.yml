@@ -1,6 +1,7 @@
 markdown: redcarpet
 exclude: ['CNAME',".gitignore",'README.md','LICENSE','Gemfile','Gemfile.lock']
 timezone: America/Sao_Paulo
+permalink: /404.html
 
 google_analytics_id: UA-55810419-1
 

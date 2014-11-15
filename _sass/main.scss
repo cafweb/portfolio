@@ -3,6 +3,8 @@ $azulClaro : #E1E9F6;
 $cinzaClaro : #EBEEED;
 
 
+$font-family-sans-serif:  "Open Sans", sans-serif !default;
+
 @import "_bootstrap";
 @import "cfdev";
 @import "compass";
@@ -15,7 +17,7 @@ html,body{
 }
 
 p{
-  font-family: 'Open Sans', sans-serif;
+//  font-family: 'Open Sans', sans-serif;
 }
 
 section {
@@ -110,6 +112,7 @@ section {
 
 #perfil{
   height: 100%;
+  padding: 0;
   // needs latest Compass, add '@import "compass"' to your scss
   background-color: #9bc9db; // Old browsers
   @include filter-gradient(#9bc9db, #29aae2, horizontal); // IE6-8
@@ -117,12 +120,27 @@ section {
   $experimental-support-for-svg: true;
   @include background-image(linear-gradient(left,  #9bc9db 0%,#85c4dd 50%,#29aae2 100%));
   .container{
-    padding-top: 180px;
     color: #fff;
-    .btn-default{
-      @include button-variant(#fff, transparent, #fff);
-      &:hover,&:focus{
-        background: rgba(255,255,255,.2);
+    height: inherit;
+    .row{
+      &:first-child{
+        height: inherit;
+        .foto{
+          height: 100%;
+          background: url(../img/carlos-fernandes.png) no-repeat center bottom;
+          background-size: auto 600px;
+        }
+        .col-dir{
+          padding-top: 180px;
+        }
+      }
+
+      .btn-default{
+        @include button-variant(#fff, transparent, #fff);
+        &:hover,&:focus{
+          background: rgba(255,255,255,.2);
+          border-color: #fff;
+        }
       }
     }
     .scroll{

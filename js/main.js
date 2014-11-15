@@ -7,6 +7,7 @@ $(function()
     if(win_width >= 768)
     {
         $("#sobre").css('max-height',$( window ).height())
+        $('.foto').height()
     }
 
     $(window).resize(function()
