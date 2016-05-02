@@ -1,4 +1,7 @@
-_site/
-.sass-cache/
-.idea/
-.git/
+_site
+.sass-cache
+.jekyll-metadata
+bower_components
+node_modules
+.bundle
+.idea

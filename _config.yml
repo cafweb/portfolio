@@ -1,8 +1,17 @@
-markdown: redcarpet
-exclude: ['CNAME',".gitignore",'README.md','LICENSE','Gemfile','Gemfile.lock']
-timezone: America/Sao_Paulo
-permalink: /404.html
+exclude: ['bower_components','node_modules','CNAME','bower.json','package.json']
+# Site settings
+title: Carlos Fernandes
+email: carlos@cfdev.com.br
+description: > # this means to ignore newlines until "baseurl:"
+  Teste
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://cfdev.com" # the base hostname & protocol for your site
+twitter_username: cafweb
+github_username:  cafweb
 
-google_analytics_id: UA-55810419-1
+# Build settings
+markdown: kramdown
 
-repository: https://github.com/cafweb/portfolio
+#sass:
+#  sass_dir: _sass
+#  style: compressed

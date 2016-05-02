@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio =========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cafweb/portfolio.git"
+  },
+  "author": "Carlos Fernandes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cafweb/portfolio/issues"
+  },
+  "homepage": "https://github.com/cafweb/portfolio#readme",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}

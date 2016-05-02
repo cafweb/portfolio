@@ -8,6 +8,8 @@
 # Config file placed in ./_sass/config.rb
 #
 
+require 'bootstrap-sass'
+require 'compass/import-once/activate'
 require 'sass'
 require 'pathname'
 require 'compass'
