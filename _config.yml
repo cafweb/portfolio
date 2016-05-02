@@ -1,4 +1,4 @@
-exclude: ['bower_components','node_modules','CNAME','bower.json','package.json']
+exclude: ['bower_components','node_modules','CNAME','bower.json','package.json','Gemgile','Gemgile.lock']
 # Site settings
 title: Carlos Fernandes
 email: carlos@cfdev.com.br
@@ -15,3 +15,13 @@ markdown: kramdown
 #sass:
 #  sass_dir: _sass
 #  style: compressed
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
